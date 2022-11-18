@@ -19,7 +19,7 @@ async function getRelated(){
     var pop = artistJSON.map( b => b.popularity);
    
 
-    console.log("name: " + names + "popularity: " + pop);
+    console.log("name: " + names + " popularity: " + pop);
 
     var width = 600;
     var height = 600;
@@ -29,12 +29,6 @@ async function getRelated(){
     .attr("witdth", width)
     .attr("height", height);
 
-    svg.selectAll("rect")
-    .data(artistJSON)
-    .enter()
-    .append("rect")
-    .attr("x", (d.name))
-    .attr("y", (e.popularity));
 
 
 }
